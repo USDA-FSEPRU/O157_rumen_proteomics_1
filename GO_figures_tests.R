@@ -15,8 +15,11 @@ GO_terms = select(GO.db, keys(GO.db, "GOID"), c("TERM", "ONTOLOGY"))
 
 # used interpro to assign GO terms to all proteins #
 
-interpro1 <- read_delim('./data/NCBI_O157.tsv.txt', delim = '\t')
-interpro2 <- read_delim('./data/Uniprot_ecoli_pan.tsv', delim = '\t', col_names = colnames(interpro1))
+interpro1 <- read_delim('./data/NCBI_O157.tsv.txt', 
+                        delim = '\t')
+interpro2 <- read_delim('./data/Uniprot_ecoli_pan.tsv',
+                        delim = '\t',
+                        col_names = colnames(interpro1))
 
 interpro <- rbind(interpro1, interpro2)
 
@@ -31,10 +34,14 @@ GO_all <- GO %>%
 
 
 # protein annotations
-all_descriptions <- read_delim('./data/prot_descriptions2.csv', delim = '\t', col_names = c('accno', 'description'))
+all_descriptions <-
+  read_delim('./data/prot_descriptions2.csv',
+             delim = '\t',
+             col_names = c('accno', 'description'))
 
 # psort locations
-psort <- read_delim('./data/psort_classifications_final.txt', delim = '\t', col_names = c('accno', 'psort_loc')) %>% 
+psort <-
+  read_delim('./data/psort_classifications_final.txt', delim = '\t', col_names = c('accno', 'psort_loc')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,' ')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,'\\(.*\\)')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,'[0-9]?[0-9]\\.[0-9][0-9]')) 
@@ -369,8 +376,16 @@ lact$pval <- signif(as.numeric(sub('< ','',lact$pval)),3)
 maint$pval <- signif(as.numeric(sub('< ','',maint$pval)),3)
 
 
-lact_sig <- lact %>% filter(pval <= 0.05 & abs(lfc) >=.5) %>% filter(!grepl('CON_', accno))
-maint_sig <- maint %>% filter(pval <= 0.05 & abs(lfc) >=.5) %>% filter(!grepl('CON_', accno))
+lact_sig <- 
+  lact %>%
+  filter(pval <= 0.05 & abs(lfc) >=.5) %>% 
+  filter(!grepl('CON_', accno))
+
+maint_sig <-
+  maint %>% 
+  filter(pval <= 0.05 & abs(lfc) >=.5) %>%
+  filter(!grepl('CON_', accno))
+
 nrow(lact_sig)
 
 sum(lact_sig$lfc >= 0) #111
@@ -381,19 +396,19 @@ nrow(lact)
 
 lact_up_vivo <- lact_sig %>% 
   dplyr::select(accno, pval, lfc) %>%
-  filter(lfc > 0)
+  filter(lfc > 0) 
+
 lact_up_vitro <- lact_sig %>%
   dplyr::select(accno, pval, lfc) %>% 
   filter(lfc < 0)
 
-
 maint_up_vivo <- maint_sig %>%
   dplyr::select(accno, pval, lfc) %>%
   filter(lfc > 0)
+
 maint_up_vitro <- maint_sig %>% 
   dplyr::select(accno, pval, lfc) %>%
   filter(lfc < 0)
-
 
 ### Write sig diffs here ###
 # join with psort # 
@@ -411,19 +426,23 @@ maint_up_vitro <- maint_sig %>%
 
 ### ADD RESULTS DIRECTORY
 # vitro is reference category #
-lact_sig %>% dplyr::select(accno, pval, lfc) %>%
+
+lact_sig %>%
+  dplyr::select(accno, pval, lfc) %>%
   left_join(all_descriptions) %>% 
   left_join(psort) %>%
   write_csv('./results/iTRAQ_lact_sigs.csv')
 
-maint_sig %>% dplyr::select(accno, pval, lfc) %>% 
+maint_sig %>%
+  dplyr::select(accno, pval, lfc) %>% 
   left_join(all_descriptions) %>% 
   left_join(psort) %>% 
   write_csv('./results/iTRAQ_maint_sigs.csv')
 
 #### THESE MAY BE MISSING SOME GO ANNOTATIONS ####
 
-lact_sig_GO <- lact_sig %>%
+lact_sig_GO <- 
+  lact_sig %>%
   left_join(GO_all) %>%
   filter(!is.na(GO)) %>%
   separate_rows(GO, sep = ',') %>%
@@ -434,7 +453,8 @@ lact_sig_GO <- lact_sig %>%
   left_join(all_descriptions) %>% 
   write_csv('./results/iTRAQ_lact_sigs_GO_annotation.csv')
 
-maint_sig_GO <- maint_sig %>%
+maint_sig_GO <-
+  maint_sig %>%
   left_join(GO_all) %>%
   filter(!is.na(GO)) %>%
   separate_rows(GO, sep = ',') %>%
@@ -465,46 +485,29 @@ write_delim(GO_lact, delim = '\t', 'lact_gene2GO.txt')
 write_delim(GO_maint, delim = '\t', 'maint_gene2GO.txt')
 
 
-# topGO_wrapper <- function(myInterestingGenes, # VECTOR OF GENE NAMES/IDS, MUST MATCH THOSE IN MAPPING FILE
-#                           mapping_file, # two column file, first column geneIDs, second column ',' delimited GOTerms
-#                           ont='BP',
-#                           algor = 'elim',
-#                           statistic='Fisher', 
-#                           nodeSize=10){
-#   
-#   require(topGO)
-#   
-#   # coreGenes <- Int_genes
-#   
-#   geneID2GO <- readMappings(mapping_file)
-#   geneNames <- names(geneID2GO)
-#   
-#   # Get the list of genes of interest
-#   # myInterestingGenes <- coreGenes$accno
-#   geneList <- factor(as.integer(geneNames %in% myInterestingGenes))
-#   names(geneList) <- geneNames
-#   # head(geneList)
-#   
-#   GOdata <- new("topGOdata", ontology = ont, allGenes = geneList,
-#                 annot = annFUN.gene2GO, gene2GO = geneID2GO, 
-#                 nodeSize=nodeSize)
-#   # Run topGO with elimination test
-#   resultTopGO.elim <- runTest(GOdata, algorithm = algor, statistic = statistic )
-#   allRes <- GenTable(GOdata, pval = resultTopGO.elim,
-#                      orderBy = "pval", 
-#                      topNodes = length(GOdata@graph@nodes), #include all nodes
-#                      numChar=1000)
-#   allRes <- allRes %>% mutate(ont=ifelse(ont=='BP', 'Biological Process', 
-#                                          ifelse(ont=='MF', 'Molecular Function', "Cellular Component"))) %>% 
-#     mutate(GO_aspect = ont, 
-#            algorithm = algor, 
-#            statistic = statistic) %>% dplyr::select(-ont)
-#   return(allRes)
-#   #write.table(allRes, file = "Lact_vivo_topGO_BP_results.txt", sep = "\t", quote = F, col.names = T, row.names = F)
-#   
-# }
-
+######## move to GO script
 library(funfuns)
+library(topGO)
+library(tidyverse)
+
+lact_up_vivo <- 
+  read_csv('./results/iTRAQ_lact_sigs.csv') %>% 
+  filter(lfc > 0) 
+
+lact_up_vitro <- 
+  read_csv('./results/iTRAQ_lact_sigs.csv') %>% 
+  filter(lfc < 0) 
+
+maint_up_vivo <- 
+  read_csv('./results/iTRAQ_maint_sigs.csv') %>% 
+  filter(lfc > 0) 
+
+maint_up_vitro <- 
+  read_csv('./results/iTRAQ_maint_sigs.csv') %>% 
+  filter(lfc < 0) 
+
+
+
 ###
 
 # these are limited to pval < 0.1
@@ -571,10 +574,15 @@ MQ_prot_groups <-
   dplyr::select(accno, everything())
 
 
-MQ_iBAQ <- MQ_prot_groups %>% dplyr::select(info, intensities)
+MQ_iBAQ <-
+  MQ_prot_groups %>% 
+  dplyr::select(info, intensities)
 
-MQ_iBAQ <- MQ_iBAQ %>% filter(Peptides >1) %>% 
-  filter(!grepl('CON', accno)) %>% filter(iBAQ !=0)  # remove contaminant proteins and those with no iBAQ info
+MQ_iBAQ <-
+  MQ_iBAQ %>% 
+  filter(Peptides >1) %>% 
+  filter(!grepl('CON', accno)) %>% 
+  filter(iBAQ !=0)  # remove contaminant proteins and those with no iBAQ info
 
 
 # riBAQ
@@ -622,32 +630,64 @@ MQ_iBAQ$rel_iBAQ2 <- MQ_iBAQ$`iBAQ 2`/sum(MQ_iBAQ$`iBAQ 2`)*100
 
 
 ### Figure S1A
-MQ_iBAQ %>% mutate(lact_iBAQ = `iBAQ 1`,
-                   maint_iBAQ = `iBAQ 2`) %>%
-  dplyr::select(accno, ends_with('_iBAQ')) %>% gather(key = 'diet', value = 'iBAQ', -accno) %>%
+MQ_iBAQ %>%
+  mutate(lact_iBAQ = `iBAQ 1`,
+         maint_iBAQ = `iBAQ 2`) %>%
+  dplyr::select(accno, ends_with('_iBAQ')) %>%
+  gather(key = 'diet', value = 'iBAQ', -accno) %>%
   mutate(diet=sub('_iBAQ', '', diet)) %>% 
-  ggplot(aes(x=diet, y=iBAQ)) + geom_col(aes(fill=diet), color='black') + ylab('iBAQ (total intensity)') + theme_bw()
+  ggplot(aes(x=diet, y=iBAQ)) + 
+  geom_col(aes(fill=diet), color='black') +
+  ylab('iBAQ (total intensity)') + 
+  theme_bw()
 
 
 ### Figure S1B
-MQ_iBAQ %>% mutate(lact_iBAQ = rel_iBAQ1,
-                   maint_iBAQ = rel_iBAQ2) %>%
-  dplyr::select(accno, ends_with('_iBAQ')) %>% gather(key = 'diet', value = 'iBAQ', -accno) %>%
+MQ_iBAQ %>% 
+  mutate(lact_iBAQ = rel_iBAQ1,
+         maint_iBAQ = rel_iBAQ2) %>%
+  dplyr::select(accno, ends_with('_iBAQ')) %>%
+  gather(key = 'diet', value = 'iBAQ', -accno) %>%
   mutate(diet=sub('_iBAQ', '', diet)) %>% 
-  ggplot(aes(x=diet, y=iBAQ)) + geom_col(aes(fill=diet), color='black') + ylab('relative iBAQ') + theme_bw()
+  ggplot(aes(x=diet, y=iBAQ)) +
+  geom_col(aes(fill=diet), color='black') + 
+  ylab('relative iBAQ') + 
+  theme_bw()
 
 
-MQ_iBAQ <- MQ_iBAQ %>% mutate(FC=rel_iBAQ1/rel_iBAQ2, 
-                   L2FC=log2(FC)) %>% dplyr::select(accno, `Protein names`, `Gene names`, contains('iBAQ'), L2FC)
+MQ_iBAQ <-
+  MQ_iBAQ %>%
+  mutate(FC=rel_iBAQ1/rel_iBAQ2, 
+         L2FC=log2(FC)) %>%
+  dplyr::select(accno, `Protein names`, `Gene names`, contains('iBAQ'), L2FC)
 
 
 # GO analysis on these 4 
 
-iBAQ_up_lact <- MQ_iBAQ %>% filter(L2FC > 1) %>% dplyr::select(-iBAQ) %>% left_join(psort) %>% left_join(all_descriptions)
-iBAQ_up_maint <- MQ_iBAQ %>% filter(L2FC < -1) %>% dplyr::select(-iBAQ) %>% left_join(psort) %>% left_join(all_descriptions)
+iBAQ_up_lact <-
+  MQ_iBAQ %>% 
+  filter(L2FC > 1) %>%
+  dplyr::select(-iBAQ) %>% 
+  left_join(psort) %>%
+  left_join(all_descriptions)
 
-iBAQ_only_maint <- MQ_iBAQ %>% filter(rel_iBAQ1 ==0) %>% dplyr::select(-iBAQ)
-iBAQ_only_lact <- MQ_iBAQ %>% filter(rel_iBAQ2 ==0) %>% filter(iBAQ !=0) %>% dplyr::select(-iBAQ)
+iBAQ_up_maint <-
+  MQ_iBAQ %>%
+  filter(L2FC < -1) %>%
+  dplyr::select(-iBAQ) %>%
+  left_join(psort) %>%
+  left_join(all_descriptions)
+
+iBAQ_only_maint <-
+  MQ_iBAQ %>% 
+  filter(rel_iBAQ1 ==0) %>% 
+  dplyr::select(-iBAQ)
+
+iBAQ_only_lact <- 
+  MQ_iBAQ %>%
+  filter(rel_iBAQ2 ==0) %>% 
+  filter(iBAQ !=0) %>%
+  dplyr::select(-iBAQ)
 
 
 #########
@@ -656,7 +696,8 @@ iBAQ_diff_all <- rbind(iBAQ_up_lact, iBAQ_up_maint)
 
 
 
-iBAQ_diff_all_GO_ANNO <- iBAQ_diff_all %>%
+iBAQ_diff_all_GO_ANNO <-
+  iBAQ_diff_all %>%
   left_join(GO_all) %>%
   filter(!is.na(GO)) %>%
   separate_rows(GO, sep = ',') %>%
@@ -696,9 +737,11 @@ library(ggforce)
 
 # LACT VS MAINT IBAQ unique proteins
 
-df.venn <- data.frame(x = c(0.766, -0.766),
-                      y = c(-0, -0),
-                      Diet = c('Lactation', 'Maintenance'))
+df.venn <-
+  data.frame(x = c(0.766, -0.766),
+             y = c(-0, -0),
+             Diet = c('Lactation', 'Maintenance'))
+
 ggplot(df.venn, aes(x0 = x, y0 = y, r = 1.5, fill = Diet)) +
   geom_circle(alpha = .3, size = .5, colour = 'black') +
   annotate('text', x=-1.5, y=0, label='179', size=10)+
@@ -716,9 +759,11 @@ nrow(iBAQ_up_maint) # 348 up in maint
 756 - (101+348) # 307 not different between diets
 
 
-df.venn <- data.frame(x = c(0.766, -0.766),
-                      y = c(-0, -0),
-                      Diet = c('Lactation', 'Maintenance'))
+df.venn <-
+  data.frame(x = c(0.766, -0.766),
+             y = c(-0, -0),
+             Diet = c('Lactation', 'Maintenance'))
+
 ggplot(df.venn, aes(x0 = x, y0 = y, r = 1.5, fill = Diet)) +
   geom_circle(alpha = .3, size = .5, colour = 'black') +
   annotate('text', x=-1.5, y=0, label='348', size=10)+
@@ -741,9 +786,11 @@ nrow(maint_up_vivo) # 56 up vivo
 667-(25+56) # 586 not diff
 
 
-df.venn <- data.frame(x = c(0.766, -0.766),
-                      y = c(-0, -0),
-                      Condition = c('in-vitro', 'in-vivo'))
+df.venn <-
+  data.frame(x = c(0.766, -0.766),
+             y = c(-0, -0),
+             Condition = c('in-vitro', 'in-vivo'))
+
 ggplot(df.venn, aes(x0 = x, y0 = y, r = 1.5, fill = Condition)) +
   geom_circle(alpha = .3, size = .5, colour = 'black') +
   annotate('text', x=-1.5, y=0, label='56', size=10)+
@@ -766,9 +813,11 @@ nrow(lact_up_vivo) # 111 up vivo
 473-(43+111) # 319 not diff
 
 
-df.venn <- data.frame(x = c(0.766, -0.766),
-                      y = c(-0, -0),
-                      Condition = c('in-vitro', 'in-vivo'))
+df.venn <-
+  data.frame(x = c(0.766, -0.766),
+             y = c(-0, -0),
+             Condition = c('in-vitro', 'in-vivo'))
+
 ggplot(df.venn, aes(x0 = x, y0 = y, r = 1.5, fill = Condition)) +
   geom_circle(alpha = .3, size = .5, colour = 'black') +
   annotate('text', x=-1.5, y=0, label='111', size=10)+
@@ -823,9 +872,9 @@ iBAQ_GO_enrich_lact <-
 
 
 iBAQ_GO_enrich_maint <-
-  rbind(topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
-        topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
-        topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
+  rbind(topGO_wrapper(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
+        topGO_wrapper(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
+        topGO_wrapper(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
 
 
 
