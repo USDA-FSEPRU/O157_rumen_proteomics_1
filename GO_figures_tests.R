@@ -15,8 +15,8 @@ GO_terms = select(GO.db, keys(GO.db, "GOID"), c("TERM", "ONTOLOGY"))
 
 # used interpro to assign GO terms to all proteins #
 
-interpro1 <- read_delim('NCBI_O157.tsv.txt', delim = '\t')
-interpro2 <- read_delim('Uniprot_ecoli_pan.tsv', delim = '\t', col_names = colnames(interpro1))
+interpro1 <- read_delim('./data/NCBI_O157.tsv.txt', delim = '\t')
+interpro2 <- read_delim('./data/Uniprot_ecoli_pan.tsv', delim = '\t', col_names = colnames(interpro1))
 
 interpro <- rbind(interpro1, interpro2)
 
@@ -31,17 +31,17 @@ GO_all <- GO %>%
 
 
 # protein annotations
-all_descriptions <- read_delim('./reference_files/prot_descriptions2.csv', delim = '\t', col_names = c('accno', 'description'))
+all_descriptions <- read_delim('./data/prot_descriptions2.csv', delim = '\t', col_names = c('accno', 'description'))
 
 # psort locations
-psort <- read_delim('reference_files/psort_classifications_final.txt', delim = '\t', col_names = c('accno', 'psort_loc')) %>% 
+psort <- read_delim('./data/psort_classifications_final.txt', delim = '\t', col_names = c('accno', 'psort_loc')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,' ')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,'\\(.*\\)')) %>% 
   mutate(psort_loc=stringr::str_remove_all(psort_loc,'[0-9]?[0-9]\\.[0-9][0-9]')) 
 
 # to fix inconsistencies in accnos
 
-ID_MAPPER <- read_delim('IDMAPPER.tsv', delim = '\t', col_names = c('ID1', 'ID2'))
+ID_MAPPER <- read_delim('./data/IDMAPPER.tsv', delim = '\t', col_names = c('ID1', 'ID2'))
 ID_dict <- ID_MAPPER$ID1
 names(ID_dict) <- ID_MAPPER$ID2
 
@@ -59,8 +59,8 @@ psort <- psort %>%
 ### iTRAQ stuff ###
 # Scaffold normalized iTRAQ intensities as well as Scaffold statistical test
 
-lact <- read_csv('iTRAQ_lact.csv')
-maint <- read_csv('iTRAQ_maint.csv')
+lact <- read_csv('./data/iTRAQ_lact.csv')
+maint <- read_csv('./data/iTRAQ_maint.csv')
 
 
 maint <- maint[-grep('\\.', as.character(maint$num)),]
@@ -173,7 +173,7 @@ lact_adon <- adonis(data = lact_meta, formula = lact_matt ~ strain + condition)
 maint_NMDS <- NMDS_ellipse(metadata = maint_meta, OTU_table = maint_matt, grouping_set = 'condition')
 maint_adon <- adonis(data = maint_meta, formula = maint_matt ~ strain + condition)
 
-
+## FIX THESE PATHS
 lact_adon$aov.tab %>% broom::tidy() %>% write_csv('./results/iTRAQ_lact_PERMANOVA.csv')
 maint_adon$aov.tab %>% broom::tidy() %>% write_csv('./results/iTRAQ_maint_PERMANOVA.csv')
 
@@ -409,7 +409,7 @@ maint_up_vitro <- maint_sig %>%
 # test2 <- maint_sig %>% dplyr::select(accno, pval, lfc) %>% left_join(psort)
 
 
-
+### ADD RESULTS DIRECTORY
 # vitro is reference category #
 lact_sig %>% dplyr::select(accno, pval, lfc) %>%
   left_join(all_descriptions) %>% 
@@ -465,81 +465,96 @@ write_delim(GO_lact, delim = '\t', 'lact_gene2GO.txt')
 write_delim(GO_maint, delim = '\t', 'maint_gene2GO.txt')
 
 
-topGO_wrapper <- function(myInterestingGenes, # VECTOR OF GENE NAMES/IDS, MUST MATCH THOSE IN MAPPING FILE
-                          mapping_file, # two column file, first column geneIDs, second column ',' delimited GOTerms
-                          ont='BP',
-                          algor = 'elim',
-                          statistic='Fisher', 
-                          nodeSize=10){
-  
-  require(topGO)
-  
-  # coreGenes <- Int_genes
-  
-  geneID2GO <- readMappings(mapping_file)
-  geneNames <- names(geneID2GO)
-  
-  # Get the list of genes of interest
-  # myInterestingGenes <- coreGenes$accno
-  geneList <- factor(as.integer(geneNames %in% myInterestingGenes))
-  names(geneList) <- geneNames
-  # head(geneList)
-  
-  GOdata <- new("topGOdata", ontology = ont, allGenes = geneList,
-                annot = annFUN.gene2GO, gene2GO = geneID2GO, 
-                nodeSize=nodeSize)
-  # Run topGO with elimination test
-  resultTopGO.elim <- runTest(GOdata, algorithm = algor, statistic = statistic )
-  allRes <- GenTable(GOdata, pval = resultTopGO.elim,
-                     orderBy = "pval", 
-                     topNodes = length(GOdata@graph@nodes), #include all nodes
-                     numChar=1000)
-  allRes <- allRes %>% mutate(ont=ifelse(ont=='BP', 'Biological Process', 
-                                         ifelse(ont=='MF', 'Molecular Function', "Cellular Component"))) %>% 
-    mutate(GO_aspect = ont, 
-           algorithm = algor, 
-           statistic = statistic) %>% dplyr::select(-ont)
-  return(allRes)
-  #write.table(allRes, file = "Lact_vivo_topGO_BP_results.txt", sep = "\t", quote = F, col.names = T, row.names = F)
-  
-}
+# topGO_wrapper <- function(myInterestingGenes, # VECTOR OF GENE NAMES/IDS, MUST MATCH THOSE IN MAPPING FILE
+#                           mapping_file, # two column file, first column geneIDs, second column ',' delimited GOTerms
+#                           ont='BP',
+#                           algor = 'elim',
+#                           statistic='Fisher', 
+#                           nodeSize=10){
+#   
+#   require(topGO)
+#   
+#   # coreGenes <- Int_genes
+#   
+#   geneID2GO <- readMappings(mapping_file)
+#   geneNames <- names(geneID2GO)
+#   
+#   # Get the list of genes of interest
+#   # myInterestingGenes <- coreGenes$accno
+#   geneList <- factor(as.integer(geneNames %in% myInterestingGenes))
+#   names(geneList) <- geneNames
+#   # head(geneList)
+#   
+#   GOdata <- new("topGOdata", ontology = ont, allGenes = geneList,
+#                 annot = annFUN.gene2GO, gene2GO = geneID2GO, 
+#                 nodeSize=nodeSize)
+#   # Run topGO with elimination test
+#   resultTopGO.elim <- runTest(GOdata, algorithm = algor, statistic = statistic )
+#   allRes <- GenTable(GOdata, pval = resultTopGO.elim,
+#                      orderBy = "pval", 
+#                      topNodes = length(GOdata@graph@nodes), #include all nodes
+#                      numChar=1000)
+#   allRes <- allRes %>% mutate(ont=ifelse(ont=='BP', 'Biological Process', 
+#                                          ifelse(ont=='MF', 'Molecular Function', "Cellular Component"))) %>% 
+#     mutate(GO_aspect = ont, 
+#            algorithm = algor, 
+#            statistic = statistic) %>% dplyr::select(-ont)
+#   return(allRes)
+#   #write.table(allRes, file = "Lact_vivo_topGO_BP_results.txt", sep = "\t", quote = F, col.names = T, row.names = F)
+#   
+# }
 
-
+library(funfuns)
 ###
 
 # these are limited to pval < 0.1
 
-lact_vivo_all <- rbind(topGO_NonModel(Int_genes = lact_up_vivo, mapping_file ='lact_gene2GO.txt', ont = 'BP') ,
-                       topGO_NonModel(Int_genes = lact_up_vivo, mapping_file ='lact_gene2GO.txt', ont = 'MF'),
-                       topGO_NonModel(Int_genes = lact_up_vivo, mapping_file ='lact_gene2GO.txt', ont = 'CC')) %>% 
-  filter(pval < 0.1) %>% dplyr::select(-algorithm, -statistic) %>% write_csv('./results/Lact_vivo_GO.csv')
+lact_vivo_all <- 
+  rbind(topGO_wrapper(myInterestingGenes = lact_up_vivo$accno, mapping_file ='lact_gene2GO.txt', ont = 'BP') ,
+        topGO_wrapper(myInterestingGenes = lact_up_vivo$accno, mapping_file ='lact_gene2GO.txt', ont = 'MF'),
+        topGO_wrapper(myInterestingGenes = lact_up_vivo$accno, mapping_file ='lact_gene2GO.txt', ont = 'CC')) %>% 
+  filter(pval < 0.1) %>%
+  dplyr::select(-algorithm, -statistic) %>%
+  write_csv('./results/Lact_vivo_GO.csv')
 
 
-lact_vitro_all <- rbind(topGO_NonModel(Int_genes = lact_up_vitro, mapping_file ='lact_gene2GO.txt', ont = 'BP') ,
-                       topGO_NonModel(Int_genes = lact_up_vitro, mapping_file ='lact_gene2GO.txt', ont = 'MF'),
-                       topGO_NonModel(Int_genes = lact_up_vitro, mapping_file ='lact_gene2GO.txt', ont = 'CC')) %>% 
-  filter(pval < 0.1) %>% dplyr::select(-algorithm, -statistic) %>% write_csv('./results/Lact_vitro_GO.csv')
+lact_vitro_all <-
+  rbind(topGO_wrapper(myInterestingGenes = lact_up_vitro$accno, mapping_file ='lact_gene2GO.txt', ont = 'BP') ,
+        topGO_wrapper(myInterestingGenes = lact_up_vitro$accno, mapping_file ='lact_gene2GO.txt', ont = 'MF'),
+        topGO_wrapper(myInterestingGenes = lact_up_vitro$accno, mapping_file ='lact_gene2GO.txt', ont = 'CC')) %>% 
+  filter(pval < 0.1) %>%
+  dplyr::select(-algorithm, -statistic) %>%
+  write_csv('./results/Lact_vitro_GO.csv')
 
 #
 
-maint_vivo_all <- rbind(topGO_NonModel(Int_genes = maint_up_vivo, mapping_file ='maint_gene2GO.txt', ont = 'BP') ,
-                       topGO_NonModel(Int_genes = maint_up_vivo, mapping_file ='maint_gene2GO.txt', ont = 'MF'),
-                       topGO_NonModel(Int_genes = maint_up_vivo, mapping_file ='maint_gene2GO.txt', ont = 'CC')) %>% 
-  filter(pval < 0.1) %>% dplyr::select(-algorithm, -statistic) %>% write_csv('./results/maint_vivo_GO.csv')
+maint_vivo_all <-
+  rbind(topGO_wrapper(myInterestingGenes = maint_up_vivo$accno, mapping_file ='maint_gene2GO.txt', ont = 'BP') ,
+        topGO_wrapper(myInterestingGenes = maint_up_vivo$accno, mapping_file ='maint_gene2GO.txt', ont = 'MF'),
+        topGO_wrapper(myInterestingGenes = maint_up_vivo$accno, mapping_file ='maint_gene2GO.txt', ont = 'CC')) %>% 
+  filter(pval < 0.1) %>% 
+  dplyr::select(-algorithm, -statistic) %>% 
+  write_csv('./results/maint_vivo_GO.csv')
 
 
-maint_vitro_all <- rbind(topGO_NonModel(Int_genes = maint_up_vitro, mapping_file ='maint_gene2GO.txt', ont = 'BP') ,
-                        topGO_NonModel(Int_genes = maint_up_vitro, mapping_file ='maint_gene2GO.txt', ont = 'MF'),
-                        topGO_NonModel(Int_genes = maint_up_vitro, mapping_file ='maint_gene2GO.txt', ont = 'CC')) %>% 
-  filter(pval < 0.1) %>% dplyr::select(-algorithm, -statistic) %>% write_csv('./results/maint_vitro_GO.csv')
+maint_vitro_all <- 
+  rbind(topGO_wrapper(myInterestingGenes = maint_up_vitro$accno, mapping_file ='maint_gene2GO.txt', ont = 'BP') ,
+        topGO_wrapper(myInterestingGenes = maint_up_vitro$accno, mapping_file ='maint_gene2GO.txt', ont = 'MF'),
+        topGO_wrapper(myInterestingGenes = maint_up_vitro$accno, mapping_file ='maint_gene2GO.txt', ont = 'CC')) %>% 
+  filter(pval < 0.1) %>%
+  dplyr::select(-algorithm, -statistic) %>% 
+  write_csv('./results/maint_vitro_GO.csv')
 
 
 
 
 #############  iBAQ from MaxQuant ##########
 
-list.files(pattern = 'proteinGroups.txt', recursive = T, full.names = T)
-MQ_prot_groups <- read_delim('../O157_first/combined/txt/proteinGroups.txt', delim = '\t') %>% filter(`Q-value` < 0.05, Peptides > 1)
+#list.files(pattern = 'proteinGroups.txt', recursive = T, full.names = T)
+
+MQ_prot_groups <-
+  read_delim('./data/MQ_proteinGroups.txt', delim = '\t') %>%
+  filter(`Q-value` < 0.05, Peptides > 1)
 # MQ_prot_groups <- read_delim('../combined/txt/proteinGroups.txt', delim = '\t') %>% filter(`Q-value` < 0.05, Peptides > 1)
 # MQ_iBAQ <- MQ_iBAQ %>% filter(Peptides >1) %>%
 #   select(-starts_with('Fraction'), -starts_with('Reporter intensity count'))
@@ -550,7 +565,10 @@ intensities <- c('Intensity', 'Intensity 1', 'Intensity 2', 'iBAQ', 'iBAQ 1', 'i
 info <- c('accno', 'Protein names', 'Gene names','Peptides', 'Peptides 1', 'Peptides 2', 'Q-value')
 
 
-MQ_prot_groups <- MQ_prot_groups %>% mutate(accno = maj_accnos) %>% dplyr::select(accno, everything())
+MQ_prot_groups <-
+  MQ_prot_groups %>% 
+  mutate(accno = maj_accnos) %>%
+  dplyr::select(accno, everything())
 
 
 MQ_iBAQ <- MQ_prot_groups %>% dplyr::select(info, intensities)
@@ -798,14 +816,16 @@ write_delim(GO_iBAQ, delim = '\t', 'iBAQ_gene2GO.txt')  ### THESE NEED TO CONTAI
 
 
 
-iBAQ_GO_enrich_lact <- rbind(topGO_NonModel(Int_genes = iBAQ_up_lact, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
-                             topGO_NonModel(Int_genes = iBAQ_up_lact, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
-                             topGO_NonModel(Int_genes = iBAQ_up_lact, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
+iBAQ_GO_enrich_lact <-
+  rbind(topGO_wrapper(myInterestingGenes = iBAQ_up_lact$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
+        topGO_wrapper(myInterestingGenes = iBAQ_up_lact$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
+        topGO_wrapper(myInterestingGenes = iBAQ_up_lact$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
 
 
-iBAQ_GO_enrich_maint <- rbind(topGO_NonModel(Int_genes = iBAQ_up_maint, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
-                              topGO_NonModel(Int_genes = iBAQ_up_maint, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
-                              topGO_NonModel(Int_genes = iBAQ_up_maint, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
+iBAQ_GO_enrich_maint <-
+  rbind(topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'BP', algor = 'elim', statistic = 'fisher'),
+        topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'CC', algor = 'elim', statistic = 'fisher'),
+        topGO_NonModel(myInterestingGenes = iBAQ_up_maint$accno, mapping_file ='iBAQ_gene2GO.txt', ont = 'MF', algor = 'elim', statistic = 'fisher'))
 
 
 
