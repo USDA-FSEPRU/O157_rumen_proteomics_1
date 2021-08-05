@@ -1,0 +1,21 @@
+GO.ID,Term,Annotated,Significant,Expected,pval,GO_aspect,involved_genes
+GO:0006412,translation,65,7,2.48,0.006,Biological Process,A0A0K5Z365_AAG58320.1_AAG58415.1_AAG58417.1_AAG58418.1_AAG58422.1_AAG58448.1
+GO:0032787,monocarboxylic acid metabolic process,25,4,0.95,0.011,Biological Process,AAG55837.1_AAG55839.1_AAG57892.1_AAG58051.1
+GO:0006091,generation of precursor metabolites and energy,35,4,1.33,0.036,Biological Process,A0A376VE31_AAG57892.1_AAG58051.1_AAG59354.1
+GO:0006165,nucleoside diphosphate phosphorylation,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0009185,ribonucleoside diphosphate metabolic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0009132,nucleoside diphosphate metabolic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0009135,purine nucleoside diphosphate metabolic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0006096,glycolytic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0009179,purine ribonucleoside diphosphate metabolic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0046031,ADP metabolic process,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0046939,nucleotide phosphorylation,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0006757,ATP generation from ADP,10,2,0.38,0.051,Biological Process,AAG57892.1_AAG58051.1
+GO:0006090,pyruvate metabolic process,11,2,0.42,0.061,Biological Process,AAG57892.1_AAG58051.1
+GO:0016052,carbohydrate catabolic process,12,2,0.46,0.072,Biological Process,AAG57892.1_AAG58051.1
+GO:0008610,lipid biosynthetic process,13,2,0.5,0.083,Biological Process,AAG55837.1_AAG55839.1
+GO:0008643,carbohydrate transport,13,2,0.5,0.083,Biological Process,A0A2X1J5F1_AAG59425.1
+GO:0044255,cellular lipid metabolic process,14,2,0.53,0.095,Biological Process,AAG55837.1_AAG55839.1
+GO:0003735,structural constituent of ribosome,39,7,1.7,0.00067,Molecular Function,A0A0K5Z365_AAG58320.1_AAG58415.1_AAG58417.1_AAG58418.1_AAG58422.1_AAG58448.1
+GO:0005840,ribosome,39,7,1.62,0.0035,Cellular Component,A0A0K5Z365_AAG58320.1_AAG58415.1_AAG58417.1_AAG58418.1_AAG58422.1_AAG58448.1
+GO:0044391,ribosomal subunit,11,3,0.46,0.0070,Cellular Component,AAG58417.1_AAG58422.1_AAG58448.1

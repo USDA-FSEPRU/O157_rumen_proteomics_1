@@ -1,0 +1,230 @@
+accno,pval,lfc,condition,GOID,TERM,description
+A0A377BTD7,0.0039,0.76,vivo,GO:0055114,NA,Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625
+A0A377BTD7,0.0039,0.76,vivo,GO:0016491,oxidoreductase activity,Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625
+A0A377BTD7,0.0039,0.76,vivo,GO:0004455,ketol-acid reductoisomerase activity,Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625
+A0A377BTD7,0.0039,0.76,vivo,GO:0009082,branched-chain amino acid biosynthetic process,Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625
+A0A377BTD7,0.0039,0.76,vivo,GO:0050661,"NADP binding",Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625
+A0A2S8EHG0,0.037,0.58,vivo,GO:0005507,copper ion binding,Cell division protein FtsP OS=Shigella flexneri OX=623 GN=sufI PE=3 SV=1 UPId=UP000001006 PPId=UP000000625
+A0A2S8EHG0,0.037,0.58,vivo,GO:0043093,FtsZ-dependent cytokinesis,Cell division protein FtsP OS=Shigella flexneri OX=623 GN=sufI PE=3 SV=1 UPId=UP000001006 PPId=UP000000625
+A0A2S8EHG0,0.037,0.58,vivo,GO:0016491,oxidoreductase activity,Cell division protein FtsP OS=Shigella flexneri OX=623 GN=sufI PE=3 SV=1 UPId=UP000001006 PPId=UP000000625
+A0A2S8EHG0,0.037,0.58,vivo,GO:0055114,NA,Cell division protein FtsP OS=Shigella flexneri OX=623 GN=sufI PE=3 SV=1 UPId=UP000001006 PPId=UP000000625
+A0A376SEY5,0.0065,0.92,vivo,GO:0008686,"3,4-dihydroxy-2-butanone-4-phosphate synthase activity","3,4-dihydroxy-2-butanone 4-phosphate synthase OS=Escherichia coli OX=562 GN=ribB_2 PE=4 SV=1 UPId=UP000254180 PPId=UP000000625"
+A0A376SEY5,0.0065,0.92,vivo,GO:0009231,riboflavin biosynthetic process,"3,4-dihydroxy-2-butanone 4-phosphate synthase OS=Escherichia coli OX=562 GN=ribB_2 PE=4 SV=1 UPId=UP000254180 PPId=UP000000625"
+AAG56270.1,0.0065,0.67,vivo,GO:0003824,catalytic activity,putative sulfatase [Escherichia coli O157:H7 str. EDL933]
+AAG56270.1,0.0065,0.67,vivo,GO:0008152,metabolic process,putative sulfatase [Escherichia coli O157:H7 str. EDL933]
+AAG56270.1,0.0065,0.67,vivo,GO:0008484,sulfuric ester hydrolase activity,putative sulfatase [Escherichia coli O157:H7 str. EDL933]
+A0A365Q3J9,0.0039,0.6,vivo,GO:0003677,DNA binding,Cold-shock protein OS=Escherichia coli O111:NM OX=373045 GN=DQW49_23350 PE=4 SV=1 UPId=UP000252789 PPId=UP000000625
+A0A365Q3J9,0.0039,0.6,vivo,GO:0006355,"regulation of transcription, DNA-templated",Cold-shock protein OS=Escherichia coli O111:NM OX=373045 GN=DQW49_23350 PE=4 SV=1 UPId=UP000252789 PPId=UP000000625
+A0A365Q3J9,0.0039,0.6,vivo,GO:0003676,nucleic acid binding,Cold-shock protein OS=Escherichia coli O111:NM OX=373045 GN=DQW49_23350 PE=4 SV=1 UPId=UP000252789 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0003862,3-isopropylmalate dehydrogenase activity,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0005737,cytoplasm,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0009098,leucine biosynthetic process,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0055114,NA,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0016616,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0000287,magnesium ion binding,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+A0A2W6P998,0.001,0.82,vivo,GO:0051287,"NAD binding",3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625
+AAG56938.1,1e-4,1.01,vivo,GO:0005198,structural molecule activity,"flagellar biosynthesis; flagellin, filament structural protein [Escherichia coli O157:H7 str. EDL933]"
+AAG56938.1,1e-4,1.01,vivo,GO:0071973,bacterial-type flagellum-dependent cell motility,"flagellar biosynthesis; flagellin, filament structural protein [Escherichia coli O157:H7 str. EDL933]"
+AAG56938.1,1e-4,1.01,vivo,GO:0009420,bacterial-type flagellum filament,"flagellar biosynthesis; flagellin, filament structural protein [Escherichia coli O157:H7 str. EDL933]"
+AAG58934.1,0.016,0.74,vivo,GO:0015986,ATP synthesis coupled proton transport,"membrane-bound ATP synthase, F1 sector, epsilon-subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG58934.1,0.016,0.74,vivo,GO:0045261,"proton-transporting ATP synthase complex, catalytic core F(1)","membrane-bound ATP synthase, F1 sector, epsilon-subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG58934.1,0.016,0.74,vivo,GO:0046933,"proton-transporting ATP synthase activity, rotational mechanism","membrane-bound ATP synthase, F1 sector, epsilon-subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG54430.1,1e-4,0.54,vivo,GO:0004089,carbonate dehydratase activity,putative carbonic anhdrase [Escherichia coli O157:H7 str. EDL933]
+AAG54430.1,1e-4,0.54,vivo,GO:0008270,zinc ion binding,putative carbonic anhdrase [Escherichia coli O157:H7 str. EDL933]
+AAG54430.1,1e-4,0.54,vivo,GO:0015976,carbon utilization,putative carbonic anhdrase [Escherichia coli O157:H7 str. EDL933]
+AAG55838.1,0.0065,0.59,vivo,GO:0008152,metabolic process,malonyl-CoA-[acyl-carrier-protein] transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG55838.1,0.0065,0.59,vivo,GO:0004314,[acyl-carrier-protein] S-malonyltransferase activity,malonyl-CoA-[acyl-carrier-protein] transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG55838.1,0.0065,0.59,vivo,GO:0003824,catalytic activity,malonyl-CoA-[acyl-carrier-protein] transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG57643.1,0.0039,0.67,vivo,GO:0005506,iron ion binding,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]"
+AAG57643.1,0.0039,0.67,vivo,GO:0016226,iron-sulfur cluster assembly,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]"
+AAG57643.1,0.0039,0.67,vivo,GO:0051536,iron-sulfur cluster binding,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]"
+AAG58705.1,0.01,0.53,vivo,GO:0003677,DNA binding,"cold shock protein 7.4, transcriptional activator of hns [Escherichia coli O157:H7 str. EDL933]"
+AAG58705.1,0.01,0.53,vivo,GO:0006355,"regulation of transcription, DNA-templated","cold shock protein 7.4, transcriptional activator of hns [Escherichia coli O157:H7 str. EDL933]"
+AAG58705.1,0.01,0.53,vivo,GO:0003676,nucleic acid binding,"cold shock protein 7.4, transcriptional activator of hns [Escherichia coli O157:H7 str. EDL933]"
+AAG58569.1,1e-4,0.63,vivo,GO:0006865,amino acid transport,high-affinity amino acid transport system; periplasmic binding protein [Escherichia coli O157:H7 str. EDL933]
+A0A376W8P8,0.0092,0.51,vivo,GO:0016209,antioxidant activity,Thioredoxin-dependent thiol peroxidase OS=Escherichia coli OX=562 GN=bcp PE=4 SV=1 UPId=UP000254716 PPId=UP000000625
+A0A376W8P8,0.0092,0.51,vivo,GO:0016491,oxidoreductase activity,Thioredoxin-dependent thiol peroxidase OS=Escherichia coli OX=562 GN=bcp PE=4 SV=1 UPId=UP000254716 PPId=UP000000625
+A0A376W8P8,0.0092,0.51,vivo,GO:0055114,NA,Thioredoxin-dependent thiol peroxidase OS=Escherichia coli OX=562 GN=bcp PE=4 SV=1 UPId=UP000254716 PPId=UP000000625
+A0A376W8P8,0.0092,0.51,vivo,GO:0045454,cell redox homeostasis,Thioredoxin-dependent thiol peroxidase OS=Escherichia coli OX=562 GN=bcp PE=4 SV=1 UPId=UP000254716 PPId=UP000000625
+AAG55867.1,1e-4,0.81,vivo,GO:0015846,polyamine transport,spermidine/putrescine periplasmic transport protein [Escherichia coli O157:H7 str. EDL933]
+AAG55867.1,1e-4,0.81,vivo,GO:0019808,polyamine binding,spermidine/putrescine periplasmic transport protein [Escherichia coli O157:H7 str. EDL933]
+AAG55867.1,1e-4,0.81,vivo,GO:0042597,periplasmic space,spermidine/putrescine periplasmic transport protein [Escherichia coli O157:H7 str. EDL933]
+A0A376T5E0,6.7e-4,-0.57,vitro,GO:0016491,oxidoreductase activity,Putative NADPH-dependent FMN reductase OS=Escherichia coli OX=562 GN=azr PE=4 SV=1 UPId=UP000255260 PPId=UP000000625
+AAG54787.1,0.0041,0.53,vivo,GO:0004252,serine-type endopeptidase activity,"ATP-dependent proteolytic subunit of clpA-clpP serine protease, heat shock protein F21.5 [Escherichia coli O157:H7 str. EDL933]"
+AAG54787.1,0.0041,0.53,vivo,GO:0006508,proteolysis,"ATP-dependent proteolytic subunit of clpA-clpP serine protease, heat shock protein F21.5 [Escherichia coli O157:H7 str. EDL933]"
+AAG54686.1,1e-4,0.52,vivo,GO:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",cytosine deaminase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0000166,nucleotide binding,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0004830,tryptophan-tRNA ligase activity,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0005524,ATP binding,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0005737,cytoplasm,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0006436,tryptophanyl-tRNA aminoacylation,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0004812,aminoacyl-tRNA ligase activity,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58484.1,2.8e-4,0.54,vivo,GO:0006418,tRNA aminoacylation for protein translation,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG57543.1,0.016,0.5,vivo,GO:0008272,sulfate transport,thiosulfate binding protein [Escherichia coli O157:H7 str. EDL933]
+AAG57543.1,0.016,0.5,vivo,GO:0015419,ABC-type sulfate transporter activity,thiosulfate binding protein [Escherichia coli O157:H7 str. EDL933]
+AAG57543.1,0.016,0.5,vivo,GO:1901681,sulfur compound binding,thiosulfate binding protein [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0005524,ATP binding,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0009058,biosynthetic process,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0016874,ligase activity,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0005737,cytoplasm,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0008360,regulation of cell shape,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0008764,UDP-N-acetylmuramoylalanine-D-glutamate ligase activity,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+AAG54392.1,3.5e-4,0.56,vivo,GO:0051301,cell division,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933]
+A0A0K5Z365,0.01,-0.62,vitro,GO:0003735,structural constituent of ribosome,30S ribosomal protein S21 OS=Escherichia coli OX=562 GN=rpsU PE=3 SV=1 UPId=UP000044469 PPId=UP000000625
+A0A0K5Z365,0.01,-0.62,vitro,GO:0005840,ribosome,30S ribosomal protein S21 OS=Escherichia coli OX=562 GN=rpsU PE=3 SV=1 UPId=UP000044469 PPId=UP000000625
+A0A0K5Z365,0.01,-0.62,vitro,GO:0006412,translation,30S ribosomal protein S21 OS=Escherichia coli OX=562 GN=rpsU PE=3 SV=1 UPId=UP000044469 PPId=UP000000625
+A0A0K5Z365,0.01,-0.62,vitro,GO:0005622,intracellular anatomical structure,30S ribosomal protein S21 OS=Escherichia coli OX=562 GN=rpsU PE=3 SV=1 UPId=UP000044469 PPId=UP000000625
+AAG59197.1,1e-4,-0.57,vitro,GO:0003677,DNA binding,DNA-binding protein HU-alpha (HU-2) [Escherichia coli O157:H7 str. EDL933]
+A0A3L4KP74,0.05,0.71,vivo,GO:0003824,catalytic activity,Transketolase OS=Escherichia coli OX=562 GN=tkt PE=3 SV=1 UPId=UP000281241 PPId=UP000000625
+A0A3L4KP74,0.05,0.71,vivo,GO:0008152,metabolic process,Transketolase OS=Escherichia coli OX=562 GN=tkt PE=3 SV=1 UPId=UP000281241 PPId=UP000000625
+A0A3L4KP74,0.05,0.71,vivo,GO:0004802,transketolase activity,Transketolase OS=Escherichia coli OX=562 GN=tkt PE=3 SV=1 UPId=UP000281241 PPId=UP000000625
+A0A2B7LJY3,0.016,0.76,vivo,GO:0003735,structural constituent of ribosome,30S ribosomal protein S16 OS=Escherichia marmotae OX=1499973 GN=rpsP PE=3 SV=1 UPId=UP000254454 PPId=UP000000625
+A0A2B7LJY3,0.016,0.76,vivo,GO:0005622,intracellular anatomical structure,30S ribosomal protein S16 OS=Escherichia marmotae OX=1499973 GN=rpsP PE=3 SV=1 UPId=UP000254454 PPId=UP000000625
+A0A2B7LJY3,0.016,0.76,vivo,GO:0005840,ribosome,30S ribosomal protein S16 OS=Escherichia marmotae OX=1499973 GN=rpsP PE=3 SV=1 UPId=UP000254454 PPId=UP000000625
+A0A2B7LJY3,0.016,0.76,vivo,GO:0006412,translation,30S ribosomal protein S16 OS=Escherichia marmotae OX=1499973 GN=rpsP PE=3 SV=1 UPId=UP000254454 PPId=UP000000625
+A0A377F6A1,1e-4,0.66,vivo,GO:0005737,cytoplasm,3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase OS=Escherichia coli OX=562 GN=fabA_2 PE=3 SV=1 UPId=UP000254255 PPId=UP000000625
+A0A377F6A1,1e-4,0.66,vivo,GO:0006633,fatty acid biosynthetic process,3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase OS=Escherichia coli OX=562 GN=fabA_2 PE=3 SV=1 UPId=UP000254255 PPId=UP000000625
+A0A377F6A1,1e-4,0.66,vivo,GO:0008693,3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase activity,3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase OS=Escherichia coli OX=562 GN=fabA_2 PE=3 SV=1 UPId=UP000254255 PPId=UP000000625
+A0A2X1N8G2,3.5e-4,0.57,vivo,GO:0003824,catalytic activity,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase OS=Escherichia coli OX=562 GN=ispD_1 PE=3 SV=1 UPId=UP000250437 PPId=UP000000625
+A0A2X1N8G2,3.5e-4,0.57,vivo,GO:0008299,isoprenoid biosynthetic process,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase OS=Escherichia coli OX=562 GN=ispD_1 PE=3 SV=1 UPId=UP000250437 PPId=UP000000625
+A0A2X1N8G2,3.5e-4,0.57,vivo,GO:0070567,cytidylyltransferase activity,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase OS=Escherichia coli OX=562 GN=ispD_1 PE=3 SV=1 UPId=UP000250437 PPId=UP000000625
+AAG58418.1,0.0039,-0.82,vitro,GO:0003735,structural constituent of ribosome,30S ribosomal subunit protein S11 [Escherichia coli O157:H7 str. EDL933]
+AAG58418.1,0.0039,-0.82,vitro,GO:0005622,intracellular anatomical structure,30S ribosomal subunit protein S11 [Escherichia coli O157:H7 str. EDL933]
+AAG58418.1,0.0039,-0.82,vitro,GO:0005840,ribosome,30S ribosomal subunit protein S11 [Escherichia coli O157:H7 str. EDL933]
+AAG58418.1,0.0039,-0.82,vitro,GO:0006412,translation,30S ribosomal subunit protein S11 [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0000166,nucleotide binding,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0004812,aminoacyl-tRNA ligase activity,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0005524,ATP binding,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0006418,tRNA aminoacylation for protein translation,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0005737,cytoplasm,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0004819,glutamine-tRNA ligase activity,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0016876,NA,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0043039,tRNA aminoacylation,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0006412,translation,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG55002.1,0.0054,0.76,vivo,GO:0006425,glutaminyl-tRNA aminoacylation,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG58422.1,1e-4,-0.51,vitro,GO:0003735,structural constituent of ribosome,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933]
+AAG58422.1,1e-4,-0.51,vitro,GO:0005622,intracellular anatomical structure,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933]
+AAG58422.1,1e-4,-0.51,vitro,GO:0005840,ribosome,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933]
+AAG58422.1,1e-4,-0.51,vitro,GO:0006412,translation,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933]
+AAG58422.1,1e-4,-0.51,vitro,GO:0015934,large ribosomal subunit,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933]
+AAG56872.1,3.5e-4,1.08,vivo,GO:0000160,phosphorelay signal transduction system,chemotaxis regulator transmits chemoreceptor signals to flagelllar motor components [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0005737,cytoplasm,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0006206,pyrimidine nucleobase metabolic process,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0008152,metabolic process,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0015949,nucleobase-containing small molecule interconversion,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0016787,hydrolase activity,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0016798,"hydrolase activity, acting on glycosyl bonds",putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0045437,uridine nucleosidase activity,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+AAG54985.1,0.0015,0.5,vivo,GO:0016799,"hydrolase activity, hydrolyzing N-glycosyl compounds",putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933]
+A0A2B7LJY8,0.0039,0.67,vivo,GO:0044238,primary metabolic process,Ribosome-associated inhibitor A OS=Escherichia marmotae OX=1499973 GN=raiA PE=4 SV=1 UPId=UP000254454 PPId=UP000000625
+AAG55076.1,1e-4,0.54,vivo,GO:0005515,protein binding,periplasmic protein involved in the tonb-independent uptake of group A colicins [Escherichia coli O157:H7 str. EDL933]
+AAG55076.1,1e-4,0.54,vivo,GO:0017038,protein import,periplasmic protein involved in the tonb-independent uptake of group A colicins [Escherichia coli O157:H7 str. EDL933]
+AAG55076.1,1e-4,0.54,vivo,GO:0042597,periplasmic space,periplasmic protein involved in the tonb-independent uptake of group A colicins [Escherichia coli O157:H7 str. EDL933]
+AAG55076.1,1e-4,0.54,vivo,GO:0015031,protein transport,periplasmic protein involved in the tonb-independent uptake of group A colicins [Escherichia coli O157:H7 str. EDL933]
+AAG54483.1,0.025,0.54,vivo,GO:0016740,transferase activity,UDP-N-acetylglucosamine acetyltransferase; lipid A biosynthesis [Escherichia coli O157:H7 str. EDL933]
+AAG54483.1,0.025,0.54,vivo,GO:0008610,lipid biosynthetic process,UDP-N-acetylglucosamine acetyltransferase; lipid A biosynthesis [Escherichia coli O157:H7 str. EDL933]
+AAG54483.1,0.025,0.54,vivo,GO:0008780,acyl-[acyl-carrier-protein]-UDP-N-acetylglucosamine O-acyltransferase activity,UDP-N-acetylglucosamine acetyltransferase; lipid A biosynthesis [Escherichia coli O157:H7 str. EDL933]
+AAG54454.1,2.1e-4,0.54,vivo,GO:0004872,NA,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]"
+AAG54454.1,2.1e-4,0.54,vivo,GO:0006810,transport,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]"
+AAG54454.1,2.1e-4,0.54,vivo,GO:0016020,membrane,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]"
+AAG54454.1,2.1e-4,0.54,vivo,GO:0005506,iron ion binding,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]"
+AAG54454.1,2.1e-4,0.54,vivo,GO:0015891,siderophore transport,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]"
+AAG58448.1,1e-4,-0.84,vitro,GO:0003735,structural constituent of ribosome,"30S ribosomal subunit protein S7, initiates assembly [Escherichia coli O157:H7 str. EDL933]"
+AAG58448.1,1e-4,-0.84,vitro,GO:0006412,translation,"30S ribosomal subunit protein S7, initiates assembly [Escherichia coli O157:H7 str. EDL933]"
+AAG58448.1,1e-4,-0.84,vitro,GO:0015935,small ribosomal subunit,"30S ribosomal subunit protein S7, initiates assembly [Escherichia coli O157:H7 str. EDL933]"
+AAG58448.1,1e-4,-0.84,vitro,GO:0003723,RNA binding,"30S ribosomal subunit protein S7, initiates assembly [Escherichia coli O157:H7 str. EDL933]"
+AAG58088.1,1e-4,-0.54,vitro,GO:0006520,cellular amino acid metabolic process,periplasmic L-asparaginase II [Escherichia coli O157:H7 str. EDL933]
+AAG58088.1,1e-4,-0.54,vitro,GO:0004067,asparaginase activity,periplasmic L-asparaginase II [Escherichia coli O157:H7 str. EDL933]
+AAG58088.1,1e-4,-0.54,vitro,GO:0006528,asparagine metabolic process,periplasmic L-asparaginase II [Escherichia coli O157:H7 str. EDL933]
+AAG55092.1,1e-4,0.74,vivo,GO:0015412,ABC-type molybdate transporter activity,molybdate-binding periplasmic protein; permease [Escherichia coli O157:H7 str. EDL933]
+AAG55092.1,1e-4,0.74,vivo,GO:0015689,molybdate ion transport,molybdate-binding periplasmic protein; permease [Escherichia coli O157:H7 str. EDL933]
+AAG55092.1,1e-4,0.74,vivo,GO:0030288,outer membrane-bounded periplasmic space,molybdate-binding periplasmic protein; permease [Escherichia coli O157:H7 str. EDL933]
+A0A1E3N634,0.0027,0.53,vivo,GO:0016226,iron-sulfur cluster assembly,Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625
+A0A1E3N634,0.0027,0.53,vivo,GO:0051539,"4 iron, 4 sulfur cluster binding",Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625
+A0A1E3N634,0.0027,0.53,vivo,GO:0051604,protein maturation,Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625
+A0A1E3N634,0.0027,0.53,vivo,GO:0005506,iron ion binding,Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625
+A0A1E3N634,0.0027,0.53,vivo,GO:0051536,iron-sulfur cluster binding,Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625
+AAG59396.1,0.049,0.86,vivo,GO:0003735,structural constituent of ribosome,30S ribosomal subunit protein S6 [Escherichia coli O157:H7 str. EDL933]
+AAG59396.1,0.049,0.86,vivo,GO:0005840,ribosome,30S ribosomal subunit protein S6 [Escherichia coli O157:H7 str. EDL933]
+AAG59396.1,0.049,0.86,vivo,GO:0006412,translation,30S ribosomal subunit protein S6 [Escherichia coli O157:H7 str. EDL933]
+AAG59396.1,0.049,0.86,vivo,GO:0019843,rRNA binding,30S ribosomal subunit protein S6 [Escherichia coli O157:H7 str. EDL933]
+AAG58131.1,0.0036,-0.57,vitro,GO:0008901,ferredoxin hydrogenase activity,"probable large subunit, hydrogenase-2 [Escherichia coli O157:H7 str. EDL933]"
+AAG58131.1,0.0036,-0.57,vitro,GO:0016151,nickel cation binding,"probable large subunit, hydrogenase-2 [Escherichia coli O157:H7 str. EDL933]"
+AAG58131.1,0.0036,-0.57,vitro,GO:0055114,NA,"probable large subunit, hydrogenase-2 [Escherichia coli O157:H7 str. EDL933]"
+AAG54911.1,1e-4,0.54,vivo,GO:0016491,oxidoreductase activity,oxygen-insensitive NAD(P)H nitroreductase [Escherichia coli O157:H7 str. EDL933]
+AAG58688.1,1e-4,0.86,vivo,GO:0043190,ATP-binding cassette (ABC) transporter complex,dipeptide transport protein [Escherichia coli O157:H7 str. EDL933]
+AAG58688.1,1e-4,0.86,vivo,GO:0055085,transmembrane transport,dipeptide transport protein [Escherichia coli O157:H7 str. EDL933]
+AAG59207.1,1e-4,0.58,vivo,GO:0003824,catalytic activity,isocitrate lyase [Escherichia coli O157:H7 str. EDL933]
+AAG59207.1,1e-4,0.58,vivo,GO:0008152,metabolic process,isocitrate lyase [Escherichia coli O157:H7 str. EDL933]
+AAG59207.1,1e-4,0.58,vivo,GO:0004451,isocitrate lyase activity,isocitrate lyase [Escherichia coli O157:H7 str. EDL933]
+AAG59207.1,1e-4,0.58,vivo,GO:0019752,carboxylic acid metabolic process,isocitrate lyase [Escherichia coli O157:H7 str. EDL933]
+A0A376RJQ7,0.0065,0.54,vivo,GO:0003824,catalytic activity,"Alanine racemase, catabolic OS=Escherichia coli OX=562 GN=dadX_2 PE=4 SV=1 UPId=UP000254159 PPId=UP000000625"
+A0A376RJQ7,0.0065,0.54,vivo,GO:0006522,alanine metabolic process,"Alanine racemase, catabolic OS=Escherichia coli OX=562 GN=dadX_2 PE=4 SV=1 UPId=UP000254159 PPId=UP000000625"
+A0A376RJQ7,0.0065,0.54,vivo,GO:0008784,alanine racemase activity,"Alanine racemase, catabolic OS=Escherichia coli OX=562 GN=dadX_2 PE=4 SV=1 UPId=UP000254159 PPId=UP000000625"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0009055,electron transfer activity,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0051536,iron-sulfur cluster binding,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0051537,"2 iron, 2 sulfur cluster binding","fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0006099,tricarboxylic acid cycle,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0016491,oxidoreductase activity,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+AAG59354.1,2.1e-4,-0.85,vitro,GO:0055114,NA,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]"
+A0A376VE31,0.0039,-1.3,vitro,GO:0004553,"hydrolase activity, hydrolyzing O-glycosyl compounds","1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625"
+A0A376VE31,0.0039,-1.3,vitro,GO:0005975,carbohydrate metabolic process,"1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625"
+A0A376VE31,0.0039,-1.3,vitro,GO:0003844,"1,4-alpha-glucan branching enzyme activity","1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625"
+A0A376VE31,0.0039,-1.3,vitro,GO:0005978,glycogen biosynthetic process,"1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625"
+A0A376VE31,0.0039,-1.3,vitro,GO:0003824,catalytic activity,"1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625"
+AAG59425.1,0.0039,-0.6,vitro,GO:0005534,galactose binding,putative LACI-type transcriptional regulator [Escherichia coli O157:H7 str. EDL933]
+AAG59425.1,0.0039,-0.6,vitro,GO:0015757,galactose transmembrane transport,putative LACI-type transcriptional regulator [Escherichia coli O157:H7 str. EDL933]
+AAG54480.1,1e-4,-0.72,vitro,GO:0051082,unfolded protein binding,"histone-like protein, located in outer membrane or nucleoid [Escherichia coli O157:H7 str. EDL933]"
+AAG56771.1,1e-4,0.64,vivo,GO:0016021,integral component of membrane,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0004332,fructose-bisphosphate aldolase activity,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0006096,glycolytic process,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0005975,carbohydrate metabolic process,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0008270,zinc ion binding,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0016832,aldehyde-lyase activity,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58051.1,1e-4,-0.5,vitro,GO:0003824,catalytic activity,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]"
+AAG58417.1,1e-4,-0.71,vitro,GO:0005622,intracellular anatomical structure,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+AAG58417.1,1e-4,-0.71,vitro,GO:0019843,rRNA binding,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+AAG58417.1,1e-4,-0.71,vitro,GO:0003723,RNA binding,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+AAG58417.1,1e-4,-0.71,vitro,GO:0003735,structural constituent of ribosome,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+AAG58417.1,1e-4,-0.71,vitro,GO:0006412,translation,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+AAG58417.1,1e-4,-0.71,vitro,GO:0015935,small ribosomal subunit,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933]
+EDZ77431.1,1e-4,-0.56,vitro,GO:0006457,protein folding,FKBP-type peptidyl-prolyl cis-trans isomerase FkpA [Escherichia coli O157:H7 str. EC4206]
+A0A2X3LM07,0.0065,0.8,vivo,GO:0016491,oxidoreductase activity,Aerobic glycerol-3-phosphate dehydrogenase OS=Escherichia coli OX=562 GN=glpD_2 PE=4 SV=1 UPId=UP000250991 PPId=UP000000625
+A0A2X3LM07,0.0065,0.8,vivo,GO:0055114,NA,Aerobic glycerol-3-phosphate dehydrogenase OS=Escherichia coli OX=562 GN=glpD_2 PE=4 SV=1 UPId=UP000250991 PPId=UP000000625
+AAG57102.1,0.0039,0.56,vivo,GO:0003824,catalytic activity,putative UDP-galactose 4-epimerase [Escherichia coli O157:H7 str. EDL933]
+AAG57102.1,0.0039,0.56,vivo,GO:0050662,NA,putative UDP-galactose 4-epimerase [Escherichia coli O157:H7 str. EDL933]
+A0A0H3JCD7,0.0039,0.69,vivo,GO:0016491,oxidoreductase activity,Reductase OS=Escherichia coli O157:H7 OX=83334 GN=ECs_0338 PE=4 SV=1 UPId=UP000000558 PPId=UP000000625
+A0A0H3JCD7,0.0039,0.69,vivo,GO:0055114,NA,Reductase OS=Escherichia coli O157:H7 OX=83334 GN=ECs_0338 PE=4 SV=1 UPId=UP000000558 PPId=UP000000625
+A0A376SRV0,0.037,-0.53,vitro,GO:0005737,cytoplasm,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625
+A0A376SRV0,0.037,-0.53,vitro,GO:0008716,D-alanine-D-alanine ligase activity,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625
+A0A376SRV0,0.037,-0.53,vitro,GO:0005524,ATP binding,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625
+A0A376SRV0,0.037,-0.53,vitro,GO:0046872,metal ion binding,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625
+A0A376SRV0,0.037,-0.53,vitro,GO:0003824,catalytic activity,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625
+AAG58415.1,3.5e-4,-0.8,vitro,GO:0003735,structural constituent of ribosome,50S ribosomal subunit protein L17 [Escherichia coli O157:H7 str. EDL933]
+AAG58415.1,3.5e-4,-0.8,vitro,GO:0005622,intracellular anatomical structure,50S ribosomal subunit protein L17 [Escherichia coli O157:H7 str. EDL933]
+AAG58415.1,3.5e-4,-0.8,vitro,GO:0005840,ribosome,50S ribosomal subunit protein L17 [Escherichia coli O157:H7 str. EDL933]
+AAG58415.1,3.5e-4,-0.8,vitro,GO:0006412,translation,50S ribosomal subunit protein L17 [Escherichia coli O157:H7 str. EDL933]
+AAG58320.1,0.0065,-0.52,vitro,GO:0003723,RNA binding,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933]
+AAG58320.1,0.0065,-0.52,vitro,GO:0003735,structural constituent of ribosome,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933]
+AAG58320.1,0.0065,-0.52,vitro,GO:0005622,intracellular anatomical structure,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933]
+AAG58320.1,0.0065,-0.52,vitro,GO:0005840,ribosome,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933]
+AAG58320.1,0.0065,-0.52,vitro,GO:0006412,translation,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933]
+AAG57892.1,1e-4,-0.67,vitro,GO:0000015,phosphopyruvate hydratase complex,enolase [Escherichia coli O157:H7 str. EDL933]
+AAG57892.1,1e-4,-0.67,vitro,GO:0000287,magnesium ion binding,enolase [Escherichia coli O157:H7 str. EDL933]
+AAG57892.1,1e-4,-0.67,vitro,GO:0004634,phosphopyruvate hydratase activity,enolase [Escherichia coli O157:H7 str. EDL933]
+AAG57892.1,1e-4,-0.67,vitro,GO:0006096,glycolytic process,enolase [Escherichia coli O157:H7 str. EDL933]
+AAG57892.1,1e-4,-0.67,vitro,GO:0046872,metal ion binding,enolase [Escherichia coli O157:H7 str. EDL933]
+A0A2X1J5F1,3.5e-4,-0.64,vitro,GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625
+A0A2X1J5F1,3.5e-4,-0.64,vitro,GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625
+A0A2X1J5F1,3.5e-4,-0.64,vitro,GO:0022872,protein-N(PI)-phosphohistidine-mannitol phosphotransferase system transmembrane transporter activity,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625
+A0A2X1J5F1,3.5e-4,-0.64,vitro,GO:0005215,transporter activity,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625
+A0A2X1J5F1,3.5e-4,-0.64,vitro,GO:0006810,transport,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625
+AAG55839.1,2.2e-4,-0.87,vitro,GO:0004316,3-oxoacyl-[acyl-carrier-protein] reductase (NADPH) activity,3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933]
+AAG55839.1,2.2e-4,-0.87,vitro,GO:0006633,fatty acid biosynthetic process,3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933]
+AAG55839.1,2.2e-4,-0.87,vitro,GO:0051287,"NAD binding",3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933]
+AAG55839.1,2.2e-4,-0.87,vitro,GO:0055114,NA,3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933]
+AAG55839.1,2.2e-4,-0.87,vitro,GO:0016491,oxidoreductase activity,3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933]
+AAG55837.1,0.016,-0.6,vitro,GO:0003824,catalytic activity,3-oxoacyl-[acyl-carrier-protein] synthase III; acetylCoA ACP transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG55837.1,0.016,-0.6,vitro,GO:0008152,metabolic process,3-oxoacyl-[acyl-carrier-protein] synthase III; acetylCoA ACP transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG55837.1,0.016,-0.6,vitro,GO:0004315,3-oxoacyl-[acyl-carrier-protein] synthase activity,3-oxoacyl-[acyl-carrier-protein] synthase III; acetylCoA ACP transacylase [Escherichia coli O157:H7 str. EDL933]
+AAG55837.1,0.016,-0.6,vitro,GO:0006633,fatty acid biosynthetic process,3-oxoacyl-[acyl-carrier-protein] synthase III; acetylCoA ACP transacylase [Escherichia coli O157:H7 str. EDL933]

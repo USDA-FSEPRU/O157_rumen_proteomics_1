@@ -1,0 +1,82 @@
+accno,pval,lfc,description,psort_loc
+A0A377BTD7,0.0039,0.76,Ketol-acid reductoisomerase OS=Escherichia coli OX=562 GN=ilvC_1 PE=3 SV=1 UPId=UP000254088 PPId=UP000000625,Cytoplasmic
+A0A2S8EHG0,0.037,0.58,Cell division protein FtsP OS=Shigella flexneri OX=623 GN=sufI PE=3 SV=1 UPId=UP000001006 PPId=UP000000625,Periplasmic
+AAG56472.1,0.0031,0.6,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Unknown
+A0A376SEY5,0.0065,0.92,"3,4-dihydroxy-2-butanone 4-phosphate synthase OS=Escherichia coli OX=562 GN=ribB_2 PE=4 SV=1 UPId=UP000254180 PPId=UP000000625",Cytoplasmic
+AAG56270.1,0.0065,0.67,putative sulfatase [Escherichia coli O157:H7 str. EDL933],Unknown
+A0A365Q3J9,0.0039,0.6,Cold-shock protein OS=Escherichia coli O111:NM OX=373045 GN=DQW49_23350 PE=4 SV=1 UPId=UP000252789 PPId=UP000000625,Cytoplasmic
+A0A2W6P998,0.001,0.82,3-isopropylmalate dehydrogenase (Fragment) OS=Escherichia coli OX=562 GN=leuB PE=3 SV=1 UPId=UP000249482 PPId=UP000000625,Cytoplasmic
+AAG56938.1,1e-4,1.01,"flagellar biosynthesis; flagellin, filament structural protein [Escherichia coli O157:H7 str. EDL933]",Extracellular
+AAG58934.1,0.016,0.74,"membrane-bound ATP synthase, F1 sector, epsilon-subunit [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG54430.1,1e-4,0.54,putative carbonic anhdrase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+EZA70160.1,0.025,0.66,hypothetical protein BY40_13605 [Escherichia coli O157:H16 str. 98-3133],Extracellular
+AAG55838.1,0.0065,0.59,malonyl-CoA-[acyl-carrier-protein] transacylase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG57643.1,0.0039,0.67,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG58705.1,0.01,0.53,"cold shock protein 7.4, transcriptional activator of hns [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG58569.1,1e-4,0.63,high-affinity amino acid transport system; periplasmic binding protein [Escherichia coli O157:H7 str. EDL933],Periplasmic
+A0A376W8P8,0.0092,0.51,Thioredoxin-dependent thiol peroxidase OS=Escherichia coli OX=562 GN=bcp PE=4 SV=1 UPId=UP000254716 PPId=UP000000625,Cytoplasmic
+AAG55867.1,1e-4,0.81,spermidine/putrescine periplasmic transport protein [Escherichia coli O157:H7 str. EDL933],Periplasmic
+A0A376T5E0,6.7e-4,-0.57,Putative NADPH-dependent FMN reductase OS=Escherichia coli OX=562 GN=azr PE=4 SV=1 UPId=UP000255260 PPId=UP000000625,Cytoplasmic
+AAG58028.1,0.0039,0.73,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG57276.1,1e-4,0.78,"putative 1,2-dioxygenase [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG54787.1,0.0041,0.53,"ATP-dependent proteolytic subunit of clpA-clpP serine protease, heat shock protein F21.5 [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG59414.1,3.5e-4,0.73,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Unknown
+AAG54686.1,1e-4,0.52,cytosine deaminase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG58484.1,2.8e-4,0.54,tryptophan tRNA synthetase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG57543.1,0.016,0.5,thiosulfate binding protein [Escherichia coli O157:H7 str. EDL933],Periplasmic
+AAG54392.1,3.5e-4,0.56,UDP-N-acetylmuramoylalanine-D-glutamate ligase [Escherichia coli O157:H7 str. EDL933],Unknown
+A0A0K5Z365,0.01,-0.62,30S ribosomal protein S21 OS=Escherichia coli OX=562 GN=rpsU PE=3 SV=1 UPId=UP000044469 PPId=UP000000625,Cytoplasmic
+AAG59197.1,1e-4,-0.57,DNA-binding protein HU-alpha (HU-2) [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+A0A3L4KP74,0.05,0.71,Transketolase OS=Escherichia coli OX=562 GN=tkt PE=3 SV=1 UPId=UP000281241 PPId=UP000000625,Cytoplasmic
+A0A2B7LJY3,0.016,0.76,30S ribosomal protein S16 OS=Escherichia marmotae OX=1499973 GN=rpsP PE=3 SV=1 UPId=UP000254454 PPId=UP000000625,Cytoplasmic
+A0A377F6A1,1e-4,0.66,3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase OS=Escherichia coli OX=562 GN=fabA_2 PE=3 SV=1 UPId=UP000254255 PPId=UP000000625,Cytoplasmic
+AAG58548.1,0.024,0.64,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+A0A1E2VHH7,0.0039,0.74,Uncharacterized protein OS=Shigella sp. FC2928 OX=1886517 GN=BFF50_23465 PE=4 SV=1 UPId=UP000095127 PPId=UP000000625,Unknown
+A0A376VKF8,0.05,0.69,Anaerobic dimethyl sulfoxide reductase subunit B OS=Escherichia coli OX=562 GN=dmsB_3 PE=4 SV=1 UPId=UP000254495 PPId=UP000000625,Unknown
+A0A2X1N8G2,3.5e-4,0.57,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase OS=Escherichia coli OX=562 GN=ispD_1 PE=3 SV=1 UPId=UP000250437 PPId=UP000000625,Cytoplasmic
+AAG58418.1,0.0039,-0.82,30S ribosomal subunit protein S11 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG55002.1,0.0054,0.76,glutamine tRNA synthetase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG58422.1,1e-4,-0.51,50S ribosomal subunit protein L15 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG58244.1,0.0039,-1.09,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG56872.1,3.5e-4,1.08,chemotaxis regulator transmits chemoreceptor signals to flagelllar motor components [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG54985.1,0.0015,0.5,putative tRNA synthetase [Escherichia coli O157:H7 str. EDL933],Unknown
+A0A376NIF8,0.0065,0.69,Protein YceI OS=Escherichia coli OX=562 GN=yceI PE=3 SV=1 UPId=UP000254405 PPId=UP000000625,Unknown
+A0A2B7LJY8,0.0039,0.67,Ribosome-associated inhibitor A OS=Escherichia marmotae OX=1499973 GN=raiA PE=4 SV=1 UPId=UP000254454 PPId=UP000000625,Cytoplasmic
+A0A2X1LIJ9,0.016,0.5,RNA polymerase-binding transcription factor OS=Escherichia coli OX=562 GN=dksA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625,Cytoplasmic
+AAG55076.1,1e-4,0.54,periplasmic protein involved in the tonb-independent uptake of group A colicins [Escherichia coli O157:H7 str. EDL933],Periplasmic
+AAG56576.1,0.05,0.7,"putative oxidoreductase, Fe-S subunit [Escherichia coli O157:H7 str. EDL933]",Unknown
+AAG54483.1,0.025,0.54,UDP-N-acetylglucosamine acetyltransferase; lipid A biosynthesis [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+A0A376TF05,0.0054,0.51,Protein YdgH OS=Escherichia coli OX=562 GN=ydgH_2 PE=4 SV=1 UPId=UP000254405 PPId=UP000000625,Unknown
+AAG54454.1,2.1e-4,0.54,"outer membrane protein receptor for ferrichrome, colicin M, and phages T1, T5, and phi80 [Escherichia coli O157:H7 str. EDL933]",OuterMembrane
+AAG58448.1,1e-4,-0.84,"30S ribosomal subunit protein S7, initiates assembly [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG58088.1,1e-4,-0.54,periplasmic L-asparaginase II [Escherichia coli O157:H7 str. EDL933],Periplasmic
+AAG55092.1,1e-4,0.74,molybdate-binding periplasmic protein; permease [Escherichia coli O157:H7 str. EDL933],Periplasmic
+A0A1E3N634,0.0027,0.53,Fe/S biogenesis protein NfuA OS=Shigella sp. FC569 OX=1892897 GN=nfuA PE=3 SV=1 UPId=UP000094766 PPId=UP000000625,Cytoplasmic
+AAG59396.1,0.049,0.86,30S ribosomal subunit protein S6 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG58131.1,0.0036,-0.57,"probable large subunit, hydrogenase-2 [Escherichia coli O157:H7 str. EDL933]",CytoplasmicMembrane
+AAG54911.1,1e-4,0.54,oxygen-insensitive NAD(P)H nitroreductase [Escherichia coli O157:H7 str. EDL933],Unknown
+AAG58688.1,1e-4,0.86,dipeptide transport protein [Escherichia coli O157:H7 str. EDL933],Periplasmic
+A0A1D3KQB7,0.025,-0.53,Putative rhodanase-like exported protein OS=Escherichia coli OX=562 GN=yibN PE=4 SV=1 UPId=UP000095528 PPId=UP000000625,Unknown
+AAG59207.1,1e-4,0.58,isocitrate lyase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+A0A376RJQ7,0.0065,0.54,"Alanine racemase, catabolic OS=Escherichia coli OX=562 GN=dadX_2 PE=4 SV=1 UPId=UP000254159 PPId=UP000000625",Cytoplasmic
+AAG59354.1,2.1e-4,-0.85,"fumarate reductase, anaerobic, iron-sulfur protein subunit [Escherichia coli O157:H7 str. EDL933]",CytoplasmicMembrane
+AAG54776.1,1e-4,0.5,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+A0A376VE31,0.0039,-1.3,"1,4-alpha-glucan branching enzyme GlgB OS=Escherichia coli OX=562 GN=glgB PE=3 SV=1 UPId=UP000254495 PPId=UP000000625",Cytoplasmic
+AAG59425.1,0.0039,-0.6,putative LACI-type transcriptional regulator [Escherichia coli O157:H7 str. EDL933],Periplasmic
+AAG54480.1,1e-4,-0.72,"histone-like protein, located in outer membrane or nucleoid [Escherichia coli O157:H7 str. EDL933]",Periplasmic
+AAG56771.1,1e-4,0.64,"orf, hypothetical protein [Escherichia coli O157:H7 str. EDL933]",OuterMembrane
+AAG58051.1,1e-4,-0.5,"fructose-bisphosphate aldolase, class II [Escherichia coli O157:H7 str. EDL933]",Cytoplasmic
+AAG58417.1,1e-4,-0.71,30S ribosomal subunit protein S4 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+EDZ77431.1,1e-4,-0.56,FKBP-type peptidyl-prolyl cis-trans isomerase FkpA [Escherichia coli O157:H7 str. EC4206],Periplasmic
+A0A2X3LM07,0.0065,0.8,Aerobic glycerol-3-phosphate dehydrogenase OS=Escherichia coli OX=562 GN=glpD_2 PE=4 SV=1 UPId=UP000250991 PPId=UP000000625,Cytoplasmic
+AAG57102.1,0.0039,0.56,putative UDP-galactose 4-epimerase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+A0A0H3JCD7,0.0039,0.69,Reductase OS=Escherichia coli O157:H7 OX=83334 GN=ECs_0338 PE=4 SV=1 UPId=UP000000558 PPId=UP000000625,Cytoplasmic
+A0A376SRV0,0.037,-0.53,D-alanine--D-alanine ligase OS=Escherichia coli OX=562 GN=ddlA PE=3 SV=1 UPId=UP000254180 PPId=UP000000625,Cytoplasmic
+AAG58415.1,3.5e-4,-0.8,50S ribosomal subunit protein L17 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG58320.1,0.0065,-0.52,50S ribosomal subunit protein L21 [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG57892.1,1e-4,-0.67,enolase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+A0A2X1J5F1,3.5e-4,-0.64,PTS system subunit IIABC OS=Escherichia coli OX=562 GN=mtlA_2 PE=4 SV=1 UPId=UP000250561 PPId=UP000000625,CytoplasmicMembrane
+AAG55839.1,2.2e-4,-0.87,3-oxoacyl-[acyl-carrier-protein] reductase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
+AAG54629.1,0.012,0.65,hypothetical protein Z0372 [Escherichia coli O157:H7 str. EDL933],Unknown
+AAG54803.1,3.5e-4,-0.77,glycoprotein/polysaccharide metabolism [Escherichia coli O157:H7 str. EDL933],Periplasmic
+AAG55837.1,0.016,-0.6,3-oxoacyl-[acyl-carrier-protein] synthase III; acetylCoA ACP transacylase [Escherichia coli O157:H7 str. EDL933],Cytoplasmic
